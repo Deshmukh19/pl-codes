@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main() {
+    //this is a single-line comments.
+    printf("hello,world!\n");
+
+    /*this is a multi-line comment.
+    it cn contain multiple lines.*/
+
+    printf("the program demonstrates comments inn c.\n");
+
+    return 0;
+
+}
