@@ -1,0 +1,25 @@
+#include<stdio.h>
+int main() {
+    __FILE__*fp;
+    char ch;
+    int lineCount=0
+    char filename[50];
+
+    prinf("enter the filename to count lines: ");
+    scanf("%s",file name);
+
+    fp=fopan(filename,"r");
+    if (fp==NULL) {
+        printf("Error:could not open file '%s'.\n",filename);
+        return 1;
+    }
+
+    while ((ch=fgetc(fp))!=EOF) {
+        if (ch=='\n') {
+            linecont++;
+        }
+    }
+    fclose(fp);
+    printf("Nummber of lines in the file=%d\n",linecount);
+    return 0;
+}
